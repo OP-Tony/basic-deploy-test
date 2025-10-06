@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iOS — Vision Meets Detail</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="halo"></canvas>
+
+    <header class="nav">
+      <div class="logo" aria-label="Site logo"></div>
+      <nav>
+        <a href="#vision">Vision</a>
+        <a href="#craft">Craft</a>
+        <a href="#features">Features</a>
+        <a href="#availability">Availability</a>
+      </nav>
+    </header>
+
+    <main class="wrap">
+      <section class="hero" id="vision">
+        <h1>
+          <span class="whisper">Think</span> clearly.<br />Feel everything.
+        </h1>
+        <p class="tag">The latest iOS. Fewer steps. More you.</p>
+        <button class="cta" id="ctaLearn">Explore</button>
+      </section>
+
+      <section class="split">
+        <div class="panel prose">
+          <h2>On simplicity</h2>
+          <p>
+            Craft is deciding what to leave out, until what remains is
+            inevitable. The new iOS doesn’t add noise; it removes friction, so
+            intention is the interface.
+          </p>
+          <p>
+            Every glance answers a question. Every touch respects time. The
+            result isn’t just faster—it’s kinder.
+          </p>
+        </div>
+        <div class="panel card glass">
+          <h3 class="mono">Design Notes</h3>
+          <ul class="bullets">
+            <li>Contrast you can read at midnight.</li>
+            <li>Motion that earns its keep.</li>
+            <li>Privacy that’s on by default.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="grid" id="craft" aria-label="Craft and execution">
+        <article class="tile">
+          <h3>Performance</h3>
+          <p>
+            Launches feel instant. Animations hold 120Hz with headroom for what
+            matters—interaction, not spectacle.
+          </p>
+        </article>
+        <article class="tile">
+          <h3>Intelligence</h3>
+          <p>
+            On‑device understanding keeps context private and suggestions
+            personal, without sending life to the cloud.
+          </p>
+        </article>
+        <article class="tile">
+          <h3>Continuity</h3>
+          <p>
+            Start on iPhone, pick up on iPad or Mac. Handoff feels less like a
+            feature and more like a promise kept.
+          </p>
+        </article>
+        <article class="tile">
+          <h3>Accessibility</h3>
+          <p>
+            Clarity, voice, and touch settings unify under one canvas so
+            everyone moves through iOS at their own speed.
+          </p>
+        </article>
+      </section>
+
+      <section class="showcase" id="features" aria-label="Feature highlights">
+        <div class="chip">
+          <h4>Lock Screen Stacks</h4>
+          <p>
+            Glanceable widgets that surface themselves when they can help—and
+            vanish when they can’t.
+          </p>
+        </div>
+        <div class="chip">
+          <h4>Privacy Keys</h4>
+          <p>
+            App permissions with plain language and one‑tap control. Choices
+            remember your choices.
+          </p>
+        </div>
+        <div class="chip">
+          <h4>Camera Native RAW+</h4>
+          <p>
+            Color that’s faithful, detail that’s honest, and controls that stay
+            out of the way.
+          </p>
+        </div>
+        <div class="chip">
+          <h4>Messages Rewrite</h4>
+          <p>
+            Reply, edit, and share with less reach and more intention. The
+            keyboard learned to anticipate respect.
+          </p>
+        </div>
+      </section>
+
+      <section class="ctaStrip" id="availability" aria-label="Availability">
+        <div class="ctaContent">
+          <h2>Available soon as a free update.</h2>
+          <p>
+            Works with recent iPhone models. Features vary by region and device.
+          </p>
+          <button class="cta ghost" id="notifyBtn">Notify me</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p class="fine">
+        Concept site. Not affiliated with Apple. Typography: Inter & Playfair
+        Display.
+      </p>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" id="toast">
+      We’ll let you know.
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
